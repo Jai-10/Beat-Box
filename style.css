@@ -1,0 +1,722 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: rgb(8, 13, 36);
+}
+
+/* hide scrollbar but still use it */
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+/* go to top button */
+.go-to-top-btn {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: fixed;
+    top: 78%;
+    right: 1%;
+}
+
+
+
+
+
+/* nav bar */
+nav {
+    height: auto;
+    width: 100%;
+    background-color: rgb(8, 13, 36);
+}
+
+
+.logo {
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+.name {
+    color: white;
+    font-size: 35px;
+    font-family: 'Andika New Basic' ,sans-serif;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+nav ul {
+    float: right;
+    margin-right: 30px;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 35px;
+    margin-top: 50px;
+}
+nav ul li a {
+    color: white;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.6s ease-in-out;
+}
+nav ul li a:hover {
+    font-size: 35px;
+}
+
+
+nav ul li a:hover {
+    color: rgb(185, 183, 183);
+    border-bottom: 1px solid grey;
+    transform: scale(2);
+}
+
+.search-box input{
+    color: white;
+    background-color:  rgb(42, 49, 92);
+    border: none;
+    border-radius: 20px;
+    padding: 12px;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+/* toggle for hamburger menu */
+#check {
+    display: none;
+}
+.checkbtn {
+    display: none;
+    cursor: pointer;
+    float: right;
+    color: white;
+    font-size: 48px;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
+
+
+
+
+
+/* main content box */
+.main-content {
+    display: inline-block;
+    margin-top: 2%;
+    margin-left: 4%;
+    margin-bottom: 8%;
+}
+
+
+
+
+
+/* music cards */
+.cards-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+
+.cards {
+    margin: 0 20px;
+}
+.cards img {
+    height: 280px;
+    width: 280px;
+    transition: all 0.25s;
+}
+.cards img:hover {
+    transform: scale(1.2);
+    box-shadow: 30px 30px 30px black;
+}
+
+
+
+
+
+/* laterst release */
+.latest-release {
+    margin-top: 50px;
+}
+.latest-release span h3 {
+    color: white;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.release-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+.releases {
+    width: 45%;
+    margin: 0 20px;
+}
+.releases img {
+    height: 150px;
+    width: 150px;
+    vertical-align: middle;
+}
+
+.song-descr {
+    display: inline-block;
+    margin: 30px 30px;
+}
+.song-descr p{
+    font-size: 20px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.song-descr span{
+    font-size: 10px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* releases overlay */
+.rel-img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+/* menu */
+#latest-menu1, #latest-menu2, #latest-menu3, #latest-menu4 {
+    display: none;
+    position: absolute;
+    left: none;
+    float: right;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+#latest-menu1 li, #latest-menu2 li, #latest-menu3 li, #latest-menu4 li{
+    padding: 15px;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* popular artists */
+.popular-artists {
+    margin-top: 50px;
+}
+.popular-artists span{
+    color: white;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.popular-artists img {
+    border-radius: 50%;
+    height: 115px;
+    width: 115px;
+}
+
+
+
+
+
+
+/* stations */
+.stations {
+    margin-top: 80px;
+}
+.stations span h3{
+    color: white;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.station-container {
+    width: 97%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto 20px 5px;
+    background-color: rgb(15, 24, 68);
+}
+.station-container img{
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    margin: 15px -1px;
+    opacity: 0.67;
+}
+.station-container .station-cards i{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.station-cards {
+    margin: 0 20px;
+}
+
+
+
+/* text overlay */
+.station-overlay {
+    position: relative;
+}
+.station-title {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+.station-title a {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+/* categories */
+.categories {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.cat {
+    margin: 0 8px;
+
+    /* for overlay */
+    position: relative;
+}
+.categories .cat img {
+    height: 200px;
+    width: 300px;
+    opacity: 0.4;
+}
+
+
+/* text overlay */
+.img-title {
+    position: absolute;
+    top: 38%;
+    left: 35%;
+}
+
+.img-title a {
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    transition: all 0.7s ease-in-out;
+}
+.img-title a:hover {
+    font-size: 35px;
+}
+
+
+
+
+
+
+
+/* genres */
+.genre-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+.genres {
+    margin: 0 8px;
+}
+.genres img {
+    border-radius: 0%;
+    height: 142px;
+    width: 142px;
+}
+.genres figcaption .sub-caption {
+    font-size: 10px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+/* Queue */
+aside {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 1%;
+    margin-left: 2%;
+}
+
+.scroll {
+    overflow-y: scroll;
+    height: 700px;
+}
+.queue-heading {
+    font-size: 22px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.queue-heading h6{
+    display: inline-block; 
+    color: rgb(73, 172, 73);
+    margin-left: 50px;
+}
+
+.queue-content {
+    margin-top: 60px;
+}
+.queue-song {
+    margin-top: 30px;
+}
+
+.queue-song img {
+    cursor: pointer;
+    border-radius: 5%;
+    height: 45px;
+    width: 45px;
+    vertical-align: middle;
+}
+.queue-overlay {
+    /* for text overlay */
+    position: relative;
+}
+.play-btn-hover {
+    position: absolute;
+    top: 25%;
+    left: 17%;
+    display: none;
+}
+.play-btn-hover i {
+    color: white;
+}
+.queue-song img:hover ~ .play-btn-hover {
+    display: block;
+}
+
+
+.queue-song .song-num {
+    color: rgb(180, 179, 179);
+    margin-right: 12px;
+    font-size: 12px;
+}
+.queue-song span {
+    margin-left: 14px;
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    vertical-align: top;
+}
+.queue-song span i:hover{
+    color: red;
+}
+
+
+/* queue menu */
+#queue-menu {
+    display: none;
+    float: right;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+#queue-menu li {
+    padding: 15px;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/* control bar */
+.control-container {
+    display: inline-block;
+    position: fixed;
+    bottom: 0%;
+    height: 16vh;
+    width: 100%;
+    background-color: rgb(48, 48, 48);
+}
+
+.control-container img {
+    height: 60px;
+    width: 60px;
+    margin: 15px 20px auto 150px;
+    vertical-align: middle;
+}
+.control-container span {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.song {
+    height: 100%;
+    display: inline-block;
+}
+.song span i {
+    color: grey;
+}
+.song .fa-heart:hover {
+    color: red;
+}
+.song .fa-ban:hover {
+    color: white;
+}
+
+/* controls */
+.controls {
+    height: 100%;
+    display: inline-block;
+    margin: 20px 180px;
+}
+.controls .fa-random {
+    padding-left: 90px;
+}
+.controls .fa-retweet {
+    padding-right: 90px;
+}
+
+.controls i {
+    color: grey;
+    margin: auto 15px;
+    font-size: 20px;
+}
+.controls .fa-pause-circle {
+    font-size: 30px;
+}
+
+/* music bar */
+.music-bar {
+    border-bottom: 3px solid grey;
+    margin-top: 7px;
+    width: 100%;
+}
+
+
+
+.volume {
+    height: 100%;
+    display: inline-block;
+}
+.volume i {
+    color: grey;
+    margin: auto 15px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+/* for latest release menu */
+@media screen and (min-width: 986px) {
+    #latest-menu1, #latest-menu2, #latest-menu3, #latest-menu4 {
+        position: absolute;
+        margin-left: 23%;
+        margin-top: -4%;
+    }
+}
+
+
+
+@media screen and (max-width: 1300px) {
+    .controls {
+        margin: 20px 90px;
+    }
+}
+@media screen and (max-width: 1255px) {
+    .controls {
+        margin: 20px 50px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1125px) {
+    .logo {
+        margin-top: 50px;
+        margin-left: 280px;
+    }
+    .checkbtn {
+        display: inline-block;
+    }
+    nav ul {
+        position: absolute;
+        width: 100%;
+        height: 50vh;
+        text-align: center;
+        background-color: rgb(13, 22, 63);
+        left: -100%;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    #check:checked ~ ul {
+        left: 0%;
+    }
+
+    .cards {
+        margin: 20px auto 0 20px;
+    }
+
+    .cat img {
+        margin-top: 40px;
+    } 
+
+
+    .song {
+        margin: auto 200px auto 200px;
+    }
+    .controls, .volume {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .logo {
+        margin-top: 10px;
+        margin-left: 180px;
+    }
+    .checkbtn {
+        display: inline-block;
+    }
+}
+
+
+/* for music bar only */
+@media screen and (max-width: 800px) {
+    .song {
+        margin: auto 100px auto 100px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .song {
+        margin: auto 60px auto 60px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 560px) {
+    .logo {
+        margin-left: 100px;
+    }
+    .song {
+        margin: auto 20px auto 20px;
+    }
+}
+
+
+@media screen and (max-width: 476px) {
+    .main-content {
+        margin-left: 11%;
+    }
+    nav {
+        margin-top: -10px;
+        height: 32vh;
+    }
+    .logo {
+        display: block;
+        padding-top: 20px;
+        margin-left: 125px;
+    }
+    .name {
+        margin-left: 33%;
+    }
+    .checkbtn {
+        position: relative;
+        left: 8%;
+    }
+
+
+    .stations {
+        margin-right: 50px;
+    }
+    .station-container {
+        margin: 10px auto;
+    }
+    .station-container img{
+        margin: 5px 5px;
+    }
+    .station-container i{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+
+    .categories {
+        margin-left: -10px;
+    }
+
+
+
+    .release-container {
+        margin-left: -20px;
+    }
+    .releases {
+        width: 38%;
+        margin: 0 20px;
+    }
+
+    .genres {
+        margin: 10px 8px;
+    }
+
+
+
+    .queue-container {
+        margin-top: 50px;
+    }
+    .queue-heading {
+        margin-left: 40px;
+    }
+    .queue-heading h6 {
+        margin-left: 25px;
+    }
+
+
+
+    .control-container {
+        height: 10vh;
+    }
+    .song {
+        margin-left: -40px;
+    }
+    
+}

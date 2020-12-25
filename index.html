@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/5e5d426839.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <title>Beat Box</title>
+</head>
+
+
+<body>
+
+    <!-- go to top -->
+    <section>
+        <a href="#"><img src="img/go-to-top.png" alt="go-to-top-btn" class="go-to-top-btn"></a>
+    </section>
+
+
+    <!-- nav bar -->
+    <header id="full-nav-bar">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+
+            <label><img src="img/player-logo.png" alt="player-logo" class="logo"></label>
+            <a href=""><label class="name"><strong>Beat</strong> Box</label></a>
+            <ul>
+                <li> <a href="#">Favourites</a> </li>
+                <li class="search-box"> <input type="text" name="search" id="search" placeholder="Search"> </li>
+                <li> <a href="#"><i class="fas fa-bell fa-1x" style="color: white;"></i></a> </li>
+                <li> <a href="#"><i class="fas fa-user fa-1x" style="color: white;"></i></a> </li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <main class="main-content">
+
+        <!-- heading cards -->
+        <section>
+            <div class="cards-container">
+                <div class="cards">
+                    <img src="img/Divide_cover.png" alt="Divide_cover">
+                </div>
+                <div class="cards">
+                    <img src="img/Bieber_cover.jpg" alt="Bieber_cover">
+                </div>
+                <div class="cards">
+                    <img src="img/X_cover.png" alt="X_cover">
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- latest release -->
+        <section>
+            <div class="latest-release">
+                <span><h3>Latest Release</h3></span>
+            </div>
+            <div class="release-container">
+                <div class="releases">
+                    <img src="img/forest.jpg" alt="forest-img" class="rel-img" onclick="show()">
+                    <div class="song-descr">
+                        <div class="descr" style="display: inline-block;">
+                            <p>Sample</p>
+                            <span>Dec 19, 2020</span>
+                            <p style="color: rgb(128, 122, 122); font-size: 15px; text-align: right; text-align: left;">4:44</p>
+                        </div>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                        <i class="fas fa-ellipsis-h fa-2x" style="color: rgb(128, 122, 122); cursor: pointer;" onclick="show_menu1()"></i>
+                    </div>
+                    <div id="latest-menu1">
+                        <ul>
+                            <li>Playlist</li>
+                            <li>Favourites</li>
+                            <li>Add to playlist</li>
+                            <li>Share</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="releases">
+                    <img src="img/forest.jpg" alt="forest-img" class="rel-img" onclick="show()">
+                    <div class="song-descr">
+                        <div class="descr" style="display: inline-block;">
+                            <p>Sample</p>
+                            <span>Dec 19, 2020</span>
+                            <p style="color: rgb(128, 122, 122); font-size: 15px; text-align: right; text-align: left;">4:44</p>
+                        </div>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                        <i class="fas fa-ellipsis-h fa-2x" style="color: rgb(128, 122, 122); cursor: pointer;" onclick="show_menu2()"></i>
+                    </div>
+                    <div id="latest-menu2">
+                        <ul>
+                            <li>Playlist</li>
+                            <li>Favourites</li>
+                            <li>Add to playlist</li>
+                            <li>Share</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="release-container">
+                <div class="releases">
+                    <img src="img/forest.jpg" alt="forest-img" class="rel-img" onclick="show()">
+                    <div class="song-descr">
+                        <div class="descr" style="display: inline-block;">
+                            <p>Sample</p>
+                            <span>Dec 19, 2020</span>
+                            <p style="color: rgb(128, 122, 122); font-size: 15px; text-align: right; text-align: left;">4:44</p>
+                        </div>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                        <i class="fas fa-ellipsis-h fa-2x" style="color: rgb(128, 122, 122); cursor: pointer;" onclick="show_menu3()"></i>
+                    </div>
+                    <div id="latest-menu3">
+                        <ul>
+                            <li>Playlist</li>
+                            <li>Favourites</li>
+                            <li>Add to playlist</li>
+                            <li>Share</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="releases">
+                    <img src="img/forest.jpg" alt="forest-img" class="rel-img" onclick="show()">
+                    <div class="song-descr">
+                        <div class="descr" style="display: inline-block;">
+                            <p>Sample</p>
+                            <span>Dec 19, 2020</span>
+                            <p style="color: rgb(128, 122, 122); font-size: 15px; text-align: right; text-align: left;">4:44</p>
+                        </div>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                        <i class="fas fa-ellipsis-h fa-2x" style="color: rgb(128, 122, 122); cursor: pointer;" onclick="show_menu4()"></i>
+                    </div>
+                    <div id="latest-menu4">
+                        <ul>
+                            <li>Playlist</li>
+                            <li>Favourites</li>
+                            <li>Add to playlist</li>
+                            <li>Share</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- popular artists -->
+        <section class="popular-artists">
+            <span><h3>Popular Artists</h3></span>
+            <figure class="cards-container">
+                <figure class="cards">
+                    <a href="artists/ed/ed.html"><img src="img/ed.jpg" alt="ed-sheeran-img"></a>
+                    <figcaption><span>Ed Sheeran</span></figcaption>
+                </figure>
+                <figure class="cards">
+                    <a href="artists/coldplay/coldplay.html"><img src="img/coldplay.png" alt="coldplay-img"></a>
+                    <figcaption><span>ColdPlay</span></figcaption>
+                </figure>
+                <figure class="cards">
+                    <a href="artists/zayn/zayn.html"><img src="img/zayn.jpg" alt="zayn-img"></a>
+                    <figcaption><span>Zayn</span></figcaption>
+                </figure>
+                <figure class="cards">
+                    <a href="artists/charlie/charlie.html"><img src="img/charlie.jpg" alt="charlie-img"></a>
+                    <figcaption><span>Charlie Puth</span></figcaption>
+                </figure>
+                <figure class="cards">
+                    <a href="artists/justin/justin.html"><img src="img/justin.jpg" alt="justin-img"></a>
+                    <figcaption><span>Justin Bieber</span></figcaption>
+                </figure>
+                <figure class="cards">
+                    <a href="artists/taylor/taylor.html"><img src="img/taylor.jpg" alt="taylor-img"></a>
+                    <figcaption><span>Taylor Swift</span></figcaption>
+                </figure>
+            </figure>
+        </section>
+
+
+
+
+        <!-- stations -->
+        <section class="stations">
+            <span><h3>Stations</h3></span>
+            <div class="station-container">
+                <div class="station-cards">
+                    <i class="fas fa-compact-disc fa-6x" style="color: rgb(238, 174, 55);"></i>
+                </div>
+                <div class="station-cards station-overlay">
+                    <img src="img/love.jpg" alt="love-img">
+                    <div class="station-title">
+                        <a href="">Love</a>
+                    </div>
+                </div>
+                <div class="station-cards station-overlay">
+                    <img src="img/radio.jpg" alt="radio-img">
+                    <div class="station-title">
+                        <a href="">Retro</a>
+                    </div>
+                </div>
+                <div class="station-cards station-overlay">
+                    <img src="img/workout.jpg" alt="workout-img">
+                    <div class="station-title" style="left: 7%;">
+                        <a href="" style="font-size: 15px;">Workout</a>
+                    </div>
+                </div>
+                <div class="station-cards station-overlay">
+                    <img src="img/pop.jpg" alt="pop-img">
+                    <div class="station-title">
+                        <a href="">Pop</a>
+                    </div>
+                </div>
+                <div class="station-cards station-overlay">
+                    <img src="img/chill.jpg" alt="chill-img">
+                    <div class="station-title">
+                        <a href="">Chill</a>
+                    </div>
+                </div>
+                <div class="station-cards station-overlay">
+                    <img src="img/rock.jpg" alt="rock-img">
+                    <div class="station-title">
+                        <a href="">Rock</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- categories -->
+        <section>
+            <div class="categories">
+                <div class="cat">
+                    <img src="img/party.jpg" alt="party-img">
+                    <div class="img-title">
+                        <a href="">Party</a>
+                    </div>
+                </div>
+                <div class="cat">
+                    <img src="img/road-trip.jpg" alt="road-img">
+                    <div class="img-title" style="left: 27%;">
+                        <a href="">Road-Trip</a>
+                    </div>
+                </div>
+                <div class="cat">
+                    <img src="img/dj-kit.jpg" alt="electronic-img">
+                    <div class="img-title" style="left: 27%;">
+                        <a href="">Electronic</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- GENRES -->
+        <!-- latest english -->
+        <section class="popular-artists">
+            <span><h3>Latest English</h3></span>
+            <figure class="genre-container">
+                <figure class="genres">
+                    <img src="img/flower.jpg" alt="flower-img">
+                    <figcaption><span>Sample</span></figcaption>
+                    <figcaption><span class="sub-caption">Dec 19, 2020</span></figcaption>
+                </figure>
+                <figure class="genres">
+                    <img src="img/dance.jpg" alt="dance-img">
+                    <figcaption><span>Sample</span></figcaption>
+                    <figcaption><span class="sub-caption">Dec 19, 2020</span></figcaption>
+                </figure>
+                <figure class="genres">
+                    <img src="img/cloth.jpg" alt="cloth-img">
+                    <figcaption><span>Sample</span></figcaption>
+                    <figcaption><span class="sub-caption">Dec 19, 2020</span></figcaption>
+                </figure>
+                <figure class="genres">
+                    <img src="img/tay.jpg" alt="tay-img">
+                    <figcaption><span>Sample</span></figcaption>
+                    <figcaption><span class="sub-caption">Dec 19, 2020</span></figcaption>
+                </figure>
+                <figure class="genres">
+                    <img src="img/cd.jpg" alt="cd-img">
+                    <figcaption><span>Sample</span></figcaption>
+                    <figcaption><span class="sub-caption">Dec 19, 2020</span></figcaption>
+                </figure>
+                <figure class="genres">
+                    <img src="img/robo.png" alt="robo-img">
+                    <figcaption><span>Sample</span></figcaption>
+                    <figcaption><span class="sub-caption">Dec 19, 2020</span></figcaption>
+                </figure>
+            </figure>
+        </section>
+
+
+        <!-- latest hindi -->
+        <section class="popular-artists">
+            <span><h3>Latest Hindi</h3></span>
+            <figure class="genre-container">
+                <figure class="genres">
+                    <img src="img/robo.png" alt="robo-img">
+                    <figcaption><span>Sample</span></figcaption>
+                    <figcaption><span class="sub-caption">Dec 19, 2020</span></figcaption>
+                </figure>
+                <figure class="genres">
+                    <img src="img/dance.jpg" alt="dance-img">
+                    <figcaption><span>Sample</span></figcaption>
+                    <figcaption><span class="sub-caption">Dec 19, 2020</span></figcaption>
+                </figure>
+                <figure class="genres">
+                    <img src="img/flower.jpg" alt="flower-img">
+                    <figcaption><span>Sample</span></figcaption>
+                    <figcaption><span class="sub-caption">Dec 19, 2020</span></figcaption>
+                </figure>
+                <figure class="genres">
+                    <img src="img/cloth.jpg" alt="cloth-img">
+                    <figcaption><span>Sample</span></figcaption>
+                    <figcaption><span class="sub-caption">Dec 19, 2020</span></figcaption>
+                </figure>
+                <figure class="genres">
+                    <img src="img/cd.jpg" alt="cd-img">
+                    <figcaption><span>Sample</span></figcaption>
+                    <figcaption><span class="sub-caption">Dec 19, 2020</span></figcaption>
+                </figure>
+                <figure class="genres">
+                    <img src="img/tay.jpg" alt="tay-img">
+                    <figcaption><span>Sample</span></figcaption>
+                    <figcaption><span class="sub-caption">Dec 19, 2020</span></figcaption>
+                </figure>
+            </figure>
+        </section>
+        
+        
+        <!-- pop -->
+        <section class="popular-artists">
+            <span><h3>Pop</h3></span>
+            <figure class="genre-container">
+                <figure class="genres">
+                    <img src="img/cd.jpg" alt="cd-img">
+                    <figcaption><span>Sample</span></figcaption>
+                    <figcaption><span class="sub-caption">Dec 19, 2020</span></figcaption>
+                </figure>
+                <figure class="genres">
+                    <img src="img/flower.jpg" alt="flower-img">
+                    <figcaption><span>Sample</span></figcaption>
+                    <figcaption><span class="sub-caption">Dec 19, 2020</span></figcaption>
+                </figure>
+                <figure class="genres">
+                    <img src="img/robo.png" alt="robo-img">
+                    <figcaption><span>Sample</span></figcaption>
+                    <figcaption><span class="sub-caption">Dec 19, 2020</span></figcaption>
+                </figure>
+                <figure class="genres">
+                    <img src="img/tay.jpg" alt="tay-img">
+                    <figcaption><span>Sample</span></figcaption>
+                    <figcaption><span class="sub-caption">Dec 19, 2020</span></figcaption>
+                </figure>
+                <figure class="genres">
+                    <img src="img/cloth.jpg" alt="cloth-img">
+                    <figcaption><span>Sample</span></figcaption>
+                    <figcaption><span class="sub-caption">Dec 19, 2020</span></figcaption>
+                </figure>
+                <figure class="genres">
+                    <img src="img/dance.jpg" alt="dance-img">
+                    <figcaption><span>Sample</span></figcaption>
+                    <figcaption><span class="sub-caption">Dec 19, 2020</span></figcaption>
+                </figure>
+            </figure>
+        </section>
+
+
+
+        <!-- jazz -->
+        <section class="popular-artists">
+            <span><h3>Jazz</h3></span>
+            <figure class="genre-container">
+                <figure class="genres">
+                    <img src="img/dance.jpg" alt="dance-img">
+                    <figcaption><span>Sample</span></figcaption>
+                    <figcaption><span class="sub-caption">Dec 19, 2020</span></figcaption>
+                </figure>
+                <figure class="genres">
+                    <img src="img/flower.jpg" alt="flower-img">
+                    <figcaption><span>Sample</span></figcaption>
+                    <figcaption><span class="sub-caption">Dec 19, 2020</span></figcaption>
+                </figure>
+                <figure class="genres">
+                    <img src="img/cloth.jpg" alt="cloth-img">
+                    <figcaption><span>Sample</span></figcaption>
+                    <figcaption><span class="sub-caption">Dec 19, 2020</span></figcaption>
+                </figure>
+                <figure class="genres">
+                    <img src="img/robo.png" alt="robo-img">
+                    <figcaption><span>Sample</span></figcaption>
+                    <figcaption><span class="sub-caption">Dec 19, 2020</span></figcaption>
+                </figure>
+                <figure class="genres">
+                    <img src="img/cd.jpg" alt="cd-img">
+                    <figcaption><span>Sample</span></figcaption>
+                    <figcaption><span class="sub-caption">Dec 19, 2020</span></figcaption>
+                </figure>
+                <figure class="genres">
+                    <img src="img/tay.jpg" alt="tay-img">
+                    <figcaption><span>Sample</span></figcaption>
+                    <figcaption><span class="sub-caption">Dec 19, 2020</span></figcaption>
+                </figure>
+            </figure>
+        </section>
+
+    </main>
+
+
+
+
+    <aside>
+        <section class="queue-container">
+            <div class="queue-heading">
+                <h3 style="display: inline-block;">Queue</h3> &emsp;&emsp;&emsp;&emsp;&emsp;
+                <h6>Queue</h6>   <i class="fas fa-chevron-down" style="color: rgb(73, 172, 73); font-size: 13px; cursor: pointer;" onclick="show_menu()"></i>
+            </div>
+
+            <div id="queue-menu">
+                <ul>
+                    <li>Playlist</li>
+                    <li>Favourites</li>
+                </ul>
+            </div>
+
+            <div class="scroll">
+                <div class="queue-content">
+                    <div class="queue-song queue-overlay">
+                        <span class="song-num">01</span>
+                        <img src="img/cloth.jpg" alt="cloth-img"> 
+                        <span>Sample</span> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <span><i class="fas fa-heart"></i></span>
+                        <div class="play-btn-hover">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="queue-song queue-overlay">
+                        <span class="song-num">02</span>
+                        <img src="img/love.jpg" alt="love-img"> 
+                        <span>Sample</span> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <span><i class="fas fa-heart"></i></span>
+                        <div class="play-btn-hover">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="queue-song queue-overlay">
+                        <span class="song-num">03</span>
+                        <img src="img/ed.jpg" alt="ed-img"> 
+                        <span>Sample</span> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <span><i class="fas fa-heart"></i></span>
+                        <div class="play-btn-hover">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="queue-song queue-overlay">
+                        <span class="song-num">04</span>
+                        <img src="img/cd.jpg" alt="cd-img"> 
+                        <span>Sample</span> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <span><i class="fas fa-heart"></i></span>
+                        <div class="play-btn-hover">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="queue-song queue-overlay">
+                        <span class="song-num">05</span>
+                        <img src="img/workout.jpg" alt="workout-img"> 
+                        <span>Sample</span> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <span><i class="fas fa-heart"></i></span>
+                        <div class="play-btn-hover">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="queue-song queue-overlay">
+                        <span class="song-num">06</span>
+                        <img src="img/chill.jpg" alt="chill-img"> 
+                        <span>Sample</span> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <span><i class="fas fa-heart"></i></span>
+                        <div class="play-btn-hover">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="queue-song queue-overlay">
+                        <span class="song-num">07</span>
+                        <img src="img/radio.jpg" alt="radio-img"> 
+                        <span>Sample</span> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <span><i class="fas fa-heart"></i></span>
+                        <div class="play-btn-hover">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="queue-song queue-overlay">
+                        <span class="song-num">08</span>
+                        <img src="img/love.jpg" alt="love-img"> 
+                        <span>Sample</span> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <span><i class="fas fa-heart"></i></span>
+                        <div class="play-btn-hover">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="queue-song queue-overlay">
+                        <span class="song-num">09</span>
+                        <img src="img/cloth.jpg" alt="cloth-img"> 
+                        <span>Sample</span> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <span><i class="fas fa-heart"></i></span>
+                        <div class="play-btn-hover">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="queue-song queue-overlay">
+                        <span class="song-num">10</span>
+                        <img src="img/cd.jpg" alt="cd-img"> 
+                        <span>Sample</span> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <span><i class="fas fa-heart"></i></span>
+                        <div class="play-btn-hover">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="queue-song queue-overlay">
+                        <span class="song-num">11</span>
+                        <img src="img/charlie.jpg" alt="charlie-img"> 
+                        <span>Sample</span> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <span><i class="fas fa-heart"></i></span>
+                        <div class="play-btn-hover">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="play-btn-hover">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="queue-song queue-overlay">
+                        <span class="song-num">12</span>
+                        <img src="img/love.jpg" alt="love-img"> 
+                        <span>Sample</span> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <span><i class="fas fa-heart"></i></span>
+                        <div class="play-btn-hover">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="queue-song queue-overlay">
+                        <span class="song-num">13</span>
+                        <img src="img/chill.jpg" alt="chill-img"> 
+                        <span>Sample</span> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <span><i class="fas fa-heart"></i></span>
+                        <div class="play-btn-hover">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="queue-song queue-overlay">
+                        <span class="song-num">14</span>
+                        <img src="img/love.jpg" alt="love-img"> 
+                        <span>Sample</span> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <span><i class="fas fa-heart"></i></span>
+                        <div class="play-btn-hover">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="queue-song queue-overlay">
+                        <span class="song-num">15</span>
+                        <img src="img/ed.jpg" alt="ed-img"> 
+                        <span>Sample</span> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <span><i class="fas fa-heart"></i></span>
+                        <div class="play-btn-hover">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="queue-song queue-overlay">
+                        <span class="song-num">16</span>
+                        <img src="img/cd.jpg" alt="cd-img"> 
+                        <span>Sample</span> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <span><i class="fas fa-heart"></i></span>
+                        <div class="play-btn-hover">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </aside>
+
+
+
+    <!-- control bar -->
+    <!-- the default view is none. it is visible after clicking the onclick button -->
+    <section id="control-bar" style="display: none;">
+        <div class="control-container">
+            <div class="song">
+                <img src="img/cloth.jpg" alt="cloth-img">
+                <span>Sample</span>    &emsp;&emsp;&emsp;     <span><i class="fas fa-heart"></i></span>   &ensp; <span><i class="fas fa-ban"></i></span>
+            </div>
+
+            <div class="controls">
+                <i class="fas fa-random"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-retweet"></i>
+
+                <div class="music-bar">
+                    <span>0:00</span>
+                    <span style="margin-left: 84%;">4:20</span>
+                </div>
+            </div>
+
+            <div class="volume">
+                <i class="fas fa-list-ul"></i>
+                <i class="fas fa-desktop"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-expand-alt"></i>
+            </div>
+        </div>
+    </section>
+         
+
+</body>
+
+
+</html>

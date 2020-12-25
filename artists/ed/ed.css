@@ -1,0 +1,476 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: rgb(8, 13, 36);
+}
+
+/* hide scrollbar but still use it */
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+/* go to top button */
+.go-to-top-btn img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: fixed;
+    top: 92%;
+    left: 1%;
+}
+
+
+
+
+
+/* nav bar */
+nav {
+    height: auto;
+    width: 100%;
+    background-color: rgb(8, 13, 36);
+}
+
+
+.logo {
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+.name {
+    color: white;
+    font-size: 35px;
+    font-family: 'Andika New Basic' ,sans-serif;
+    vertical-align: top;
+}
+
+nav ul {
+    float: right;
+    margin-right: 30px;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 35px;
+    margin-top: 50px;
+}
+nav ul li a {
+    color: white;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.6s ease-in-out;
+}
+nav ul li a:hover {
+    font-size: 35px;
+}
+
+
+nav ul li a:hover {
+    color: rgb(185, 183, 183);
+    border-bottom: 1px solid grey;
+    transform: scale(2);
+}
+
+.search-box input{
+    color: white;
+    background-color:  rgb(42, 49, 92);
+    border: none;
+    border-radius: 20px;
+    padding: 12px;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+/* toggle for hamburger menu */
+#check {
+    display: none;
+}
+.checkbtn {
+    display: none;
+    cursor: pointer;
+    float: right;
+    color: white;
+    font-size: 48px;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
+
+
+
+
+/* main content box */
+.main-content {
+    width: 66%;
+    display: inline-block;
+    margin-top: 2%;
+    margin-left: 4%;
+    margin-bottom: 8%;
+}
+
+
+
+
+
+/* info card */
+.info-card{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    background-color:  rgb(26, 31, 58);
+}
+.info-card img {
+    opacity: 0.6;
+    height: 385px;
+    width: 325px;
+}
+.info-text {
+    padding-left: 25px;
+    padding-top: 30px;
+    display: inline-block;
+    width: 66%;
+}
+.info-text span {
+    color: rgb(151, 151, 151);
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+}
+.info-text span h3 {
+    padding-bottom: 10px;
+    color: white;
+    font-size: 30px;
+}
+.info-text button {
+    border: none;
+    width: 200px;
+    padding: 20px;
+    margin-top: 50px;
+    background: linear-gradient(90deg, rgb(81, 17, 141), rgb(194, 109, 152) 95%);
+    font-size: 20px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+.info-text button:hover {
+    transform: scale(1.1);
+}
+
+.follow {
+    font-size: 20px;
+    cursor: pointer;
+    transition:  all 0.4s ease-in-out;
+}
+.follow:hover {
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+/* songs */
+.song {
+    height: 15vh;
+    padding: 10px;
+    margin-top: 30px;
+    background-color: rgb(70, 72, 75, 0.2);
+}
+
+.song img {
+    cursor: pointer;
+    border-radius: 5%;
+    height: 65px;
+    width: 65px;
+    vertical-align: middle;
+}
+
+.song .song-numb {
+    color: rgb(180, 179, 179);
+    margin-right: 12px;
+    font-size: 12px;
+}
+.song span {
+    margin-left: 14px;
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    vertical-align: top;
+}
+.song span i {
+    float: right;
+    padding-right: 20px;
+}
+.song span i:hover{
+    color: red;
+}
+
+
+
+
+
+
+
+/* similar artists */
+aside {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 1%;
+    margin-left: 2%;
+}
+
+.similar-heading {
+    font-size: 22px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.similar-heading h6{
+    display: inline-block; 
+    color: rgb(73, 172, 73);
+    margin-left: 50px;
+}
+
+.similar-content {
+    margin-top: 60px;
+}
+.similar-song {
+    margin-top: 30px;
+}
+
+.similar-song img {
+    cursor: pointer;
+    border-radius: 5%;
+    height: 65px;
+    width: 65px;
+    transition: all 0.4s ease-in-out;
+}
+.similar-song img:hover {
+    transform: scale(1.3);
+}
+
+.similar-song {
+    color: rgb(180, 179, 179);
+    margin-right: 12px;
+    font-size: 12px;
+}
+.similar-song span {
+    margin-left: 14px;
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    vertical-align: top;
+}
+.similar-song span i:hover{
+    color: grey;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/* recently played */
+aside {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 1%;
+    margin-left: 2%;
+}
+.recent {
+    margin-top: 70px;
+}
+
+
+.recently-heading {
+    font-size: 22px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.recently-heading h6{
+    display: inline-block; 
+    color: rgb(73, 172, 73);
+    margin-left: 50px;
+}
+
+.recently-content {
+    margin-top: 60px;
+}
+.recently-song {
+    margin-top: 30px;
+}
+
+.recently-song img {
+    cursor: pointer;
+    border-radius: 5%;
+    height: 45px;
+    width: 45px;
+}
+.recently-overlay {
+    /* for text overlay */
+    position: relative;
+}
+.play-btn-hover {
+    position: absolute;
+    top: 25%;
+    left: 17%;
+    display: none;
+}
+.play-btn-hover i {
+    color: white;
+}
+.recently-song img:hover ~ .play-btn-hover {
+    display: block;
+}
+
+
+.recently-song .song-num {
+    color: rgb(180, 179, 179);
+    margin-right: 12px;
+    font-size: 12px;
+}
+.recently-song span {
+    margin-left: 14px;
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    vertical-align: top;
+}
+.recently-song span i:hover{
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1496px) {
+    .info-text span {
+        margin-left: 45px;
+        text-align: center;
+        width: 100%;
+    }
+    .info-text button {
+        margin-left: 40px;
+    }
+    .track-content {
+        margin-left: 40px;
+    }
+}
+
+
+
+@media screen and (max-width: 1125px) {
+    .logo {
+        margin-top: 50px;
+        margin-left: 280px;
+    }
+    .checkbtn {
+        display: inline-block;
+    }
+    nav ul {
+        position: absolute;
+        width: 100%;
+        height: 50vh;
+        text-align: center;
+        background-color: rgb(13, 22, 63);
+        left: -100%;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    #check:checked ~ ul {
+        left: 0%;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    .logo {
+        margin-top: 10px;
+        margin-left: 180px;
+    }
+    .checkbtn {
+        display: inline-block;
+    }
+}
+
+
+@media screen and (max-width: 560px) {
+    .logo {
+        margin-left: 100px;
+    }
+    body {
+        margin-bottom: 70px;
+    }
+}
+
+
+@media screen and (max-width: 476px) {
+    .main-content {
+        margin-left: 11%;
+    }
+    nav {
+        margin-top: -10px;
+        height: 32vh;
+    }
+    .logo {
+        display: block;
+        padding-top: 20px;
+        margin-left: 125px;
+    }
+    .name {
+        margin-left: 33%;
+    }
+    .checkbtn {
+        position: relative;
+        left: 8%;
+    }
+
+
+    .info-card {
+        width: 120%;
+    }
+    .info-card img {
+        height: 355px;
+        width: 325px;
+    }
+
+
+    .similar {
+        margin-top: 30px;
+    }
+    .similar-heading {
+        margin-left: 20px;
+    }
+    .similar-content {
+        margin-left: 20px;
+    }
+
+
+    .recently-heading {
+        margin-left: 20px;
+    }
+}
